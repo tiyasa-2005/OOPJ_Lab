@@ -10,7 +10,7 @@ public class prog_1_5 {
         first=sc.next();
         System.out.println("Enter last name");
         last=sc.next();
-        name=first+" "+last;
+        name=last+" "+first;
         System.out.println("Concatenated Name: "+name);
     }
 }
