@@ -1,3 +1,5 @@
+package Day_2;
+
 import java.util.*;
 class Student{
     String name;
@@ -13,13 +15,13 @@ public class prog_2_5 {
         Student[] box=new Student[n];
         for(int i=0;i<n;i++){
             box[i] = new Student();
-            System.out.println("Enter student "+(i+1)+" details");
+            System.out.println("Enter student "+(i+1)+" Day_1.details");
             sc.nextLine();
             box[i].name= sc.nextLine();
             box[i].roll= sc.nextLong();
             box[i].cgpa= sc.nextFloat();
         }
-        System.out.println("Student Details:-");
+        System.out.println("Day_2.Student Details:-");
         for(int i = 0; i < n; i++){
             System.out.println("Name: " + box[i].name);
             System.out.println("Roll: " + box[i].roll);
@@ -32,6 +34,6 @@ public class prog_2_5 {
             if(box[i].cgpa<box[min].cgpa)
                 min=i;
         }
-        System.out.println("Student "+box[min].name+" has lowest cgpa");
+        System.out.println("Day_2.Student "+box[min].name+" has lowest cgpa");
     }
 }

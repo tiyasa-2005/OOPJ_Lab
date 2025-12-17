@@ -1,3 +1,5 @@
+package Day_1;
+
 import java.util.*;
 public class prog_1_2 {
     public static void main(String[] args){

@@ -1,3 +1,5 @@
+package Day_1;
+
 import java.util.*;
 class details{
     String name;
