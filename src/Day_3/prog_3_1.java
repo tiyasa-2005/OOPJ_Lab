@@ -10,7 +10,7 @@ class sheet{
         System.out.println("Enter length and breadth of sheet:");
         length=sc.nextInt();
         breadth=sc.nextInt();
-        double a=0.0;
+        int a=0;
         a=length*breadth;
         System.out.println("Cost = "+(40*a));
     }
@@ -24,7 +24,7 @@ class box extends sheet{
         length=sc.nextInt();
         breadth=sc.nextInt();
         height=sc.nextInt();
-        double v = 0.0;
+        int v = 0;
         v=length*breadth*height;
         System.out.println("Cost = "+(60*v));
     }

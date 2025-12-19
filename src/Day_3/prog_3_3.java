@@ -17,7 +17,7 @@ class Account{
 class Person extends Account{
     String name;
     long aadhar_no;
-    void in(){
+    void input(){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter Name and Aadhar Number:");
         name=sc.nextLine();
@@ -38,11 +38,11 @@ public class prog_3_3 {
         for (int i = 0; i < 3; i++) {
             System.out.println("\nEnter details of person " + (i + 1));
             p[i] = new Person();
-            p[i].in();
+            p[i].input();
             p[i].input();
         }
 
-        System.out.println("\n--- Details of Three Persons ---");
+        System.out.println("Details of Three Persons");
         for (int i = 0; i < 3; i++) {
             System.out.println("\nPerson " + (i + 1));
             p[i].disp();

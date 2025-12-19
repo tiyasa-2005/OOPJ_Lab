@@ -38,7 +38,7 @@ class woodbox extends box1{
 public class prog_3_2 {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter dimensions length, breadth, height, :");
+        System.out.println("Enter dimensions length, breadth, height and thickness:");
         int l=sc.nextInt();
         int b=sc.nextInt();
         int h=sc.nextInt();
