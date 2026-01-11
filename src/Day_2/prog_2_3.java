@@ -23,7 +23,7 @@ public class prog_2_3 {
         mybox.width = sc.nextInt();
         mybox.height = sc.nextInt();
 
-        mybox.volume(mybox.length, mybox.width, mybox.height); // FIXED
+        mybox.volume(mybox.length, mybox.width, mybox.height); 
     }
 }
 
