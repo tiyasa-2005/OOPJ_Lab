@@ -13,7 +13,7 @@ class WashingMachine implements Motor{
     public void consume(){
         System.out.println("The Washing Machine is consuming electricity");
     }
-    void display(){
+    public void display(){
         System.out.println("Capacity of Motor = "+capacity);
     }
 }
