@@ -9,7 +9,7 @@ public class employee {
         empid = id;
         ename = name;
     }
-    public double earning() { // Note: your image says 'earning', not 'earnings'
+    public double earning() {
         double earn = basic + 0.8 * basic + 0.15 * basic;
         return earn;
     }

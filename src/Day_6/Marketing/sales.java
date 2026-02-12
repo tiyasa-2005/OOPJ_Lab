@@ -4,11 +4,13 @@ import Day_6.General.employee;
 import java.util.*;
 
 public class sales extends employee {
-    public sales(double basic, long empid, String ename) {
+    public sales(double basic, long empid, String ename)
+    {
         super(basic, empid, ename);
     }
 
-    public double tallowance() {
+    public double tallowance()
+    {
         return 0.05 * earning();
     }
 }
