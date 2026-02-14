@@ -2,14 +2,11 @@ package Day_7;
 
 import java.util.Scanner;
 
-class HrsException extends Exception {
-}
+class HrsException extends Exception { }
 
-class MinException extends Exception {
-}
+class MinException extends Exception { }
 
-class SecException extends Exception {
-}
+class SecException extends Exception { }
 
 class Time {
     int hrs, mins, sec;

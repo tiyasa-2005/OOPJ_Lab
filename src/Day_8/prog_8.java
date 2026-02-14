@@ -16,6 +16,7 @@ public class prog_8 {
         System.out.println("8. Check the number of word, vowel and consonant in the string");
         System.out.println("Enter your choice:");
         int s = sc.nextInt();
+        sc.nextLine();
         switch (s) {
             case 1:
                 System.out.println("Enter a string:");
@@ -150,7 +151,7 @@ public class prog_8 {
         int l = str.length();
         for (int i = 0; i < l; i++) {
             char ch = str.charAt(i);
-            if (ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch == 'u')
+            if (ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch != 'u')
                 y++;
         }
         return y;
