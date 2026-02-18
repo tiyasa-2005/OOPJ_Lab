@@ -1,4 +1,4 @@
-package day_5;
+package Day_5;
 import java.util.*;
 
 interface Employee{

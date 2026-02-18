@@ -14,7 +14,9 @@ class test2{
         }
         catch(ArithmeticException e){
             System.out.println("Exception: "+e);
-            System.out.println("Default Value = 0");
+        }
+        finally {
+            System.out.println("try-catch block ending");
         }
     }
 }

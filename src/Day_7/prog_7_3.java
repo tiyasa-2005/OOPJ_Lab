@@ -24,9 +24,6 @@ class test3 {
         catch (NegativeNumberException e) {
             System.out.println("Exception occurred: " + e);
         }
-        catch (Exception e) {
-            System.out.println("Exception occured: " + e);
-        }
         finally {
             System.out.println("Program Completed");
         }

@@ -38,7 +38,7 @@ class Time {
                     throw new MinException();
             }
             catch (MinException e) {
-                System.out.println("Exception occurred: InvalidMinuteException:hour is not greater than 60");
+                System.out.println("Exception occurred: InvalidMinuteException:minute is not greater than 60");
             }
 
             // Validate Seconds
@@ -47,7 +47,7 @@ class Time {
                     throw new SecException();
             }
             catch (SecException e) {
-                System.out.println("Exception occurred: InvalidSecondException:hour is not greater than 60");
+                System.out.println("Exception occurred: InvalidSecondException:second is not greater than 60");
             }
         }
     }

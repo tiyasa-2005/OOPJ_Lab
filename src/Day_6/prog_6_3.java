@@ -6,10 +6,9 @@ class University {
 
     class Department {
         String deptName = "CSE";
-        String hodName = "Dr. Das";
+        String hodName = "Dr. Sankar";
 
         void display() {
-            // Accessing outer class data directly
             System.out.println("University: " + universityName);
             System.out.println("Location: " + location);
             System.out.println("Department: " + deptName);
