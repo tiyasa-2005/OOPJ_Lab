@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class prog_9_4 {
     public static void main(String[] args) throws IOException {
-        Scanner console = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter the name of the file: ");
-        String filename = console.nextLine();
+        String filename = sc.nextLine();
         int lineCount = 0;
         int wordCount = 0;
         int charCount = 0;

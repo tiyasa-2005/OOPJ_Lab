@@ -9,26 +9,36 @@ public class prog_9_3 {
         String file1 = sc.nextLine();
         System.out.print("Enter second binary file: ");
         String file2 = sc.nextLine();
-        try (BufferedInputStream bis1 = new BufferedInputStream(new FileInputStream("file1.dat"));
-             BufferedInputStream bis2 = new BufferedInputStream(new FileInputStream("file2.dat")))
-        {
-            int b1, b2, pos = 0;
-            boolean diffFound = false;
-            while ((b1 = bis1.read()) != -1)
-            {
-                b2 = bis2.read();
-                if (b1 != b2) {
-                    System.out.println("Two files are not equal: byte position " + pos);
-                    diffFound = true;
+        try (FileInputStream fis1 = new FileInputStream(file1);
+             FileInputStream fis2 = new FileInputStream(file2)) {
+
+            int byte1, byte2;
+            long position = 1;
+            boolean areEqual = true;
+
+            while ((byte1 = fis1.read()) != -1 && (byte2 = fis2.read()) != -1) {
+                if (byte1 != byte2) {
+                    System.out.println("Files differ at byte position: " + position);
+                    areEqual = false;
                     break;
                 }
-                pos++;
+                position++;
             }
-            if (!diffFound)
-                System.out.println("Two files are equal");
+            if (areEqual) {
+                if (fis1.read() != -1 || fis2.read() != -1) {
+                    System.out.println("Files differ at byte position: " + position);
+                }
+                else {
+                    System.out.println("Two files are equal");
+                }
+            }
+
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("Error: One or both files could not be found.");
         }
         catch (IOException e) {
-            System.out.println("Error reading files.");
+            System.out.println("Error reading files: " + e.getMessage());
         }
     }
 }
