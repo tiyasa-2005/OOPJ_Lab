@@ -39,12 +39,16 @@ public class prog_10_2 {
                     double n2 = Double.parseDouble(text2.getText());
                     double res = 0;
 
-                    if (e.getSource() == addBtn) res = n1 + n2;
-                    else if (e.getSource() == subBtn) res = n1 - n2;
-                    else if (e.getSource() == mulBtn) res = n1 * n2;
+                    if (e.getSource() == addBtn)
+                        res = n1 + n2;
+                    else if (e.getSource() == subBtn)
+                        res = n1 - n2;
+                    else if (e.getSource() == mulBtn)
+                        res = n1 * n2;
 
                     textResult.setText(String.valueOf(res));
-                } catch (Exception ex) {
+                }
+                catch (Exception ex) {
                     textResult.setText("Error: Enter Numbers");
                 }
             }
