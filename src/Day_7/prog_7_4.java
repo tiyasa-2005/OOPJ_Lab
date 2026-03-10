@@ -41,7 +41,6 @@ class Time {
                 System.out.println("Exception occurred: InvalidMinuteException:minute is not greater than 60");
             }
 
-            // Validate Seconds
             try {
                 if (sec > 60 || sec < 0)
                     throw new SecException();
